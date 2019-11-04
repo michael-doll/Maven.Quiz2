@@ -11,6 +11,8 @@ public class ToStringTest {
                 new Pair<>("/users", "UserController"));
     }
 
+    //ignore
+
     @Test
     public void test2() {
         test(

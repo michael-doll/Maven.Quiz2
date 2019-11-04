@@ -20,7 +20,7 @@ public class MostCommonTest {
         test(valuesToAdd, mostCommonValue);
     }
 
-
+//Ignore this test
     @Test
     public void test3() {
         Integer mostCommonValue = null;

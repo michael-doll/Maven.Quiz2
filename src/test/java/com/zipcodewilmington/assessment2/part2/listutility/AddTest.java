@@ -20,6 +20,7 @@ public class AddTest {
         test(3);
     }
 
+    //Ignore this test
     @Test
     public void test4() {
         test(null);

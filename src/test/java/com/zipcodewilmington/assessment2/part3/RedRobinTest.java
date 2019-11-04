@@ -3,7 +3,7 @@ package com.zipcodewilmington.assessment2.part3;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RedRobinTest {
+public class RedRobinTest extends Bird{
 
     @Test
     public void testMove() {
