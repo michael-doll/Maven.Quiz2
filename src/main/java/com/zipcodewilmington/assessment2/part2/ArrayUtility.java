@@ -23,10 +23,25 @@ public class ArrayUtility {
     }
 
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
-        return null;
+        Integer count = 0;
+        Integer[] array3 = merge(array1,array2);
+        for(int i =0; i < array3.length; i++){
+            if(array3[i] == valueToEvaluate ){
+                count++;
+            }
+        }
+        return count;
     }
 
     public Integer mostCommon(Integer[] array) {
-        return null;
+        int mostCommon = array[0];
+        Integer[] bogus = new Integer[0];
+        for(int i =0; i < array.length; i++){
+            int current = countOccurrence(array,bogus,array[i]);
+            if(current > mostCommon){
+                mostCommon = current;
+            }
+        }
+        return mostCommon;
     }
 }
